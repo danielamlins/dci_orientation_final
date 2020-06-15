@@ -37,7 +37,7 @@ h1{
     margin-bottom: 0;
     padding: 50px;
     color: #DCD6F7;
-    font-size: 80px;
+    font-size: 90px;
 }
 
 h4{
@@ -68,12 +68,20 @@ nav{
     background-color: #49475B;
     box-shadow: 0 2px 2px #49475B;
 }
+nav ul{
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav > ul >li{
+    float: left;
+    text-align: center;
+}
 
 nav a {
     display: block;
     padding: 12px;
-    float: left;
-    text-align: center;
     font-size: 28px;
     text-decoration: none;
 }
@@ -114,7 +122,7 @@ nav a.current-page{
 .welcome p{
     margin-top: 0;
     -webkit-text-stroke: 0.5px black;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 /* "About" section */
@@ -240,6 +248,7 @@ nav a.current-page{
 
 input[type="text"], 
 input[type=email],
+input[type="number"],
 select, 
 textarea {
     display: block;
@@ -266,11 +275,13 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-    border: 3px solid #F0F3F5;
+    width: 80px;
+    height: 40px;
 }
 
 input[type=submit]:active{
-    border: none;
+    outline: none;
+    box-shadow: inset 0 0 5px #5B3942;
 }
 
 
