@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a business card webpage for the petsitter X. It provides information on the team, the services provided (pet sitting, dog walking), as well as reviews and a blog.">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Import font -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">   
+    <!-- Import Icons For Social Media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <!-- Create Navigation Bar -->
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <main>
+        <!-- Welcome Hero Shot-->
+        <div class="welcome" id="welcome">
+            <h1>Welcome!</h1>
+            <p>Pet Sitter XY Webpage.</p>
+
+        </div>
+
+        <!-- About Session -->
+        <div class="about" id="about">
+            <br>
+            <h4>About us</h4>
+            <div class="flex-container">
+
+                <!-- Photos of the team -->
+                <img src="/img/catzoom-min.png" alt="cat sleeping">
+
+                <div>
+                    <p>The team.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, expedita earum! Tempora soluta obcaecati iste deleniti saepe amet eos porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, veniam expedita. Quam harum
+                        quis impedit itaque earum. Doloremque, expedita perspiciatis.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Services Provided Session -->
+        <div class="services flex-container" id="services">
+            <div>
+                <h4>Services provided</h4>
+
+                <ul>
+                    <li>Something. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dignissimos sequi
+                        quisquam in id, voluptatem facilis ratione est aliquid illo.</li>
+                    <li>Another thing. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti earum iste
+                        eligendi qui repudiandae beatae quidem eum at.</li>
+                    <li>Something more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam dolor
+                        iste officiis harum minima amet dolores possimus expedita quidem quam doloribus, sunt asperiores
+                        at?</li>
+                    <li>One last thing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, delectus?</li>
+                </ul>
+
+                <p>Small text about the services. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                    culpa soluta aspernatur autem fugit obcaecati debitis quo eos nihil pariatur!</p>
+            </div>
+
+            <div>
+
+                <img src="/img/puppy.jpg" alt="Picture of a puppy">
+                <img src="/img/rick-t-t-uhScTLh4vSg-unsplash.jpg" alt="Picture of a cute cat">
+                <img src="/img/hamster.jpg" alt="Picture of a Hamster">
+
+            </div>
+
+        </div>
+
+        <!-- Contact Session -->
+        <div class="contact" id="contact">
+            <div class="inner-contact">
+                <!-- Contact Information -->
+                <div class="info">
+                    <h5>Contact Information:</h5>
+                    <p>Number: 000 0000000</p>
+                    <p>Email: email@address.com</p>
+                    <p>Social media:</p>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+
+
+                </div>
+
+                <!-- Constact Form -->
+                <div class="contact-form">
+
+                    <h5>Send us a message:</h5>
+
+                    <form action="#" class="contact-form">
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email*" required>
+
+                        <label for="how-did-you-hear">How did you hear about us?</label>
+                        <select id="how-did-you-hear">
+                            <option value="choose"></option>
+                            <option value="social media">Social Media</option>
+                            <option value="advertisement">Advertisement</option>
+                            <option value="Recomendation">Recommendation</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="message"> Message</label>
+                        <textarea id="message" cols="" rows="8" required></textarea>
+
+
+                        <div style="float: right">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
