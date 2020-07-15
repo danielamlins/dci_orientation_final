@@ -110,7 +110,7 @@ nav a.current-page{
     padding-top: 20px;
     width: 100%;
     height: 700px;
-    background-image: url(/img/dog\ cat2.jpg);
+    background-image: url(../img/dog\ cat2.jpg);
     background-position: center center;
     background-size: cover;  
     background-repeat: no-repeat;
