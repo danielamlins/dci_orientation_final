@@ -1,0 +1,44 @@
+/* "About" section */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.about img {
+  margin: auto;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 2px 5px #49475b;
+}
+
+.flex-container div {
+    padding-left: 3rem ;
+    width: 75%;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    display: block;
+  }
+  .flex-container img {
+    margin: 2rem 4rem;
+    float: left;
+  }
+
+  .flex-container div {
+      width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-container img {
+    display: block;
+  }
+}

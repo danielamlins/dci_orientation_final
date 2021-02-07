@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a business card webpage for the petsitter X. The current page offers some reviews by former costumers.">
+    <meta name="description"
+        content="This is a business card webpage for the petsitter X. The current page offers some reviews by former costumers.">
 
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
     <title>Reviews</title>
 </head>
@@ -16,6 +17,12 @@
 <body>
     <!-- Create Navigation Bar -->
     <nav>
+        <input type="checkbox">
+        <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
             <li><a href="index.html#welcome">Home</a></li>
             <li><a href="index.html#about">About</a></li>
@@ -23,7 +30,7 @@
             <li><a href="index.html#contact">Contact</a></li>
             <li><a class="current-page" href="reviews.html">Reviews</a></li>
             <li><a href="blog.html">Blog</a></li>
-        </ul>        
+        </ul>
     </nav>
 
     <main class="review">
@@ -65,11 +72,14 @@
                 <p class="name-person mar-0"> Jane Doe the Third. February, 2020</p>
 
             </div>
-        </div>
+            <!-- Picture that stays on the right -->
 
-        <!-- Picture that stays on the right -->
-        <div class="side-menu" id="img-review">
-            <img class="sticky" src="img/dogs-running.png" alt="Dogs running">
+        </div>
+        <div class="side-img">
+            <img src="img/dogs-running.png" alt="Dogs running">
+        </div>
+        <!-- Picture that stays on the bottom on tablets and phones -->
+        <div class="bottom-img">
         </div>
 
     </main>

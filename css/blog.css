@@ -1,0 +1,161 @@
+/* Styles for the blog page */
+
+/* Side-menu */
+.blog .side-menu {
+  width: 25%;
+  position: fixed;
+  top: 80px;
+}
+
+.blog .side-menu h5 {
+  margin: 50px 0 20px 20px;
+  padding: 4px 10px;
+  width: 30%;
+  color: #5b3942;
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 1px solid #49475b;
+  box-shadow: 0 4px 2px -2px #49475b;
+}
+
+.blog .side-menu ul {
+  width: 80%;
+  padding: 10px;
+}
+
+.blog .side-menu li {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.blog .side-menu a {
+  display: block;
+  padding: 10px;
+  color: #1b998b;
+  text-decoration: none;
+}
+
+
+/* Main Content */
+.blog .main-content {
+  width: 80%;
+  float: right;
+}
+
+.blog li:hover {
+  background-color: RGB(225, 231, 235, 0.5);
+  box-shadow: 0 1px 3px #49475b;
+}
+
+.blog-txt {
+  margin-right: 30px;
+  margin-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.blog-txt h5 {
+  margin-left: 30px;
+  color: #1b998b;
+  font-size: 30px;
+}
+
+.blog-txt h6 {
+  margin-left: 30px;
+  font-size: 26px;
+}
+
+.blog-txt p {
+  margin: 50px 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+/* Main Content Images */
+.blog-txt img {
+  margin-right: 2.5rem;
+  margin-left: 20px;
+  height: 200px;
+  float: left;
+  border-radius: 10px;
+}
+
+.blog-txt .img-right {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+img.img-portrait {
+  width: 200px;
+  height: auto;
+}
+
+/* Main-Content tables */
+.blog-txt table {
+  margin: inherit;
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 3px 7px #5b3942;
+}
+
+ .blog-txt table tr th {
+  padding: 15px 20px 15px 10px;
+  background-color: RGB(180, 134, 159, 0.8);
+  text-align: left;
+}
+
+.blog-txt table tr td {
+  padding: 15px 10px 10px 10px;
+  font-size: 0.9rem;
+}
+
+/* Main-content Sources */
+.txt-source {
+  float: right;
+  font-style: italic;
+  font-size: 16px;
+}
+
+a.source-link {
+  display: inline;
+  padding: 0;
+}
+
+
+/* Back to top link */
+.back-top {
+  margin: 0 1.5rem;
+}
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .side-menu {
+    position: static;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    width: 100%;
+  }
+  .side-menu ul {
+    width: 90%;
+  }
+
+  .blog .main-content {
+    width: 100%;
+    margin-top: 0;
+  }
+  .blog-txt table {
+    width: 95%;
+  }
+  .blog-txt table tr th {
+    padding: 6px 4px;
+  }
+  .blog-txt table tr td {
+    padding: 6px 8px;
+    font-size: 1rem;
+  }
+}

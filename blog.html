@@ -4,30 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a business card webpage for the petsitter X. The current page provides some blog posts on the subject of pet sitting, dog breeds and cat breeds in Germnay.">
+    <meta name="description"
+        content="This is a business card webpage for the petsitter X. The current page provides some blog posts on the subject of pet sitting, dog breeds and cat breeds in Germnay.">
 
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">   
-
-    <style>
-        main {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .side-menu {
-            flex: 15%;
-            margin-top: 10%;
-
-        }
-
-        .main-content {
-            flex: 85%;
-            margin-top: 5%;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
     <title>Blog</title>
 </head>
@@ -35,6 +19,12 @@
 <body>
     <!-- Create Navigation Bar -->
     <nav>
+        <input type="checkbox">
+        <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
             <li><a href="index.html#welcome">Home</a></li>
             <li><a href="index.html#about">About</a></li>
@@ -42,7 +32,7 @@
             <li><a href="index.html#contact">Contact</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a class="current-page" href="blog.html">Blog</a></li>
-        </ul>        
+        </ul>
     </nav>
     <!-- Create side navigation bar -->
     <main class="blog">
@@ -84,14 +74,15 @@
                     tenetur nihil id iste dolore nemo ipsam voluptas aut corporis labore nisi deleniti animi harum
                     dolorum nostrum praesentium expedita. Dolorem, placeat officia sit soluta reiciendis labore dicta
                     ad. Quibusdam magnam non est. </p>
-
+                <div class="back-top"><a href="#">Back to top</a></div>
             </div>
-            
+
             <!-- Second Blog Post -->
             <div class="blog-txt" id="item2">
                 <h5>Most Common Dog Breeds in Germany</h5>
 
-                <p class="intro-txt">Here is an example of a blog post. Source: <a class="source-link" href="https://www.animals-digital.de/" target="_blank">animals-digital.de</a></p>
+                <p class="intro-txt">Here is an example of a blog post. Source: <a class="source-link"
+                        href="https://www.animals-digital.de/" target="_blank">animals-digital.de</a></p>
 
                 <h6>#1 French Bulldog</h6>
                 <img src="img/french_bulldog-min.jpg" alt="Image of a French Bulldog">
@@ -248,7 +239,7 @@
                     <tr>
                         <th>Breed</th>
                         <th>Size class</th>
-                        <th>Standard Size</th>
+                        <th>Std. Size</th>
                         <th>Color</th>
                         <th>Temperament</th>
                     </tr>
@@ -325,15 +316,18 @@
                         <td>Courageous, biddable, with natural guarding instincts.</td>
                     </tr>
                 </table>
-                <p class="txt-source"> Source: <a href="https://www.thekennelclub.org.uk/" target="_blank">British Kennel Club</a>. Labradoodle considered mix-breed.</p>
+                <p class="txt-source"> Source: <a href="https://www.thekennelclub.org.uk/" target="_blank">British
+                        Kennel Club</a>. Labradoodle considered mix-breed.</p>
+
             </div>
+            <div class="back-top"><a href="#">Back to top</a></div>
 
             <!-- Third Blog Post -->
             <div class="blog-txt" id="item3">
                 <h5>Most Common Cat Breeds in Germany</h5>
 
-                <p class="intro-txt">Here is another example of a blog post. Source: <a class="source-link" target="_blank"
-                        href="https://www.animals-digital.de/">animals-digital.de</a></p>
+                <p class="intro-txt">Here is another example of a blog post. Source: <a class="source-link"
+                        target="_blank" href="https://www.animals-digital.de/">animals-digital.de</a></p>
 
                 <h6>#1 Maine Coon</h6>
                 <img src="img/maine_coon-min.jpg" alt="Image of a Maine Coon" class="img-right">
@@ -366,8 +360,7 @@
                     doloribus ut. Est totam iure repudiandae mollitia minima, officiis error. Iure, autem commodi!</p>
 
                 <h6>#3 British Shorthair</h6>
-                <img src="img/british_shorthair_cat-min.jpg" alt="Picture of a British Shorthair Cat"
-                    class="img-right">
+                <img src="img/british_shorthair_cat-min.jpg" alt="Picture of a British Shorthair Cat" class="img-right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe consequatur nisi alias
                     suscipit non repudiandae sapiente quos, voluptatibus vero voluptas! Totam nobis cumque itaque!
                     Dolore doloribus deserunt iusto quam delectus earum quidem, accusamus rem modi similique fugit
@@ -570,8 +563,10 @@
                         <td></td>
                     </tr>
                 </table> -->
+                <div class="back-top"><a href="#">Back to top</a></div>
             </div>
         </div>
     </main>
 </body>
+
 </html>

@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a business card webpage for the petsitter X. It provides information on the team, the services provided (pet sitting, dog walking), as well as reviews and a blog.">
+    <meta name="description"
+        content="This is a business card webpage for the petsitter X. It provides information on the team, the services provided (pet sitting, dog walking), as well as reviews and a blog.">
 
     <link rel="stylesheet" href="css/styles.css">
     <!-- Import font -->
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <!-- Import Icons For Social Media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -20,6 +21,12 @@
 
     <!-- Create Navigation Bar -->
     <nav>
+        <input type="checkbox">
+        <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
             <li><a href="#welcome">Home</a></li>
             <li> <a href="#about">About</a></li>
@@ -27,13 +34,13 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="blog.html">Blog</a></li>
-        </ul>        
+        </ul>
     </nav>
 
     <main>
         <!-- Welcome Hero Shot-->
         <div class="welcome" id="welcome">
-            <h1 style="text-shadow: 2px 2px 4px black;">Welcome!</h1>
+            <h1>Welcome!</h1>
             <p>Pet Sitter XY Webpage.</p>
 
         </div>
@@ -48,7 +55,8 @@
                 <img src="img/catzoom-min.png" alt="cat sleeping">
 
                 <div>
-                    <p>The team.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, expedita earum! Tempora soluta obcaecati iste deleniti saepe amet eos porro.</p>
+                    <p>The team.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, expedita
+                        earum! Tempora soluta obcaecati iste deleniti saepe amet eos porro.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, veniam expedita. Quam harum
                         quis impedit itaque earum. Doloremque, expedita perspiciatis.</p>
                     <ul>
@@ -63,32 +71,39 @@
         </div>
 
         <!-- Services Provided Session -->
-        <div class="services flex-container" id="services">
-            <div>
-                <h4>Services provided</h4>
+        <div id="services">
+            <h4>Services provided</h4>
 
-                <ul>
-                    <li>Something. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dignissimos sequi
-                        quisquam in id, voluptatem facilis ratione est aliquid illo.</li>
-                    <li>Another thing. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti earum iste
-                        eligendi qui repudiandae beatae quidem eum at.</li>
-                    <li>Something more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam dolor
-                        iste officiis harum minima amet dolores possimus expedita quidem quam doloribus, sunt asperiores
-                        at?</li>
-                    <li>One last thing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, delectus?</li>
-                </ul>
+            <div class="inner_services">
+                <div class="services-txt">
+                    <ul>
+                        <li>Something. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dignissimos
+                            sequi
+                            quisquam in id, voluptatem facilis ratione est aliquid illo.</li>
+                        <li>Another thing. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti earum iste
+                            eligendi qui repudiandae beatae quidem eum at.</li>
+                        <li>Something more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam
+                            dolor
+                            iste officiis harum minima amet dolores possimus expedita quidem quam doloribus, sunt
+                            asperiores
+                            at?</li>
+                        <li>One last thing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, delectus?
+                        </li>
+                    </ul>
 
-                <p>Small text about the services. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-                    culpa soluta aspernatur autem fugit obcaecati debitis quo eos nihil pariatur!</p>
+                    <p>Small text about the services. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                        culpa soluta aspernatur autem fugit obcaecati debitis quo eos nihil pariatur!</p>
+                </div>
+
+                <div id="services_imgs">
+
+                    <img src="img/puppy.jpg" alt="Picture of a puppy">
+                    <img src="img/rick-t-t-uhScTLh4vSg-unsplash.jpg" alt="Picture of a cute cat">
+                    <img src="img/hamster.jpg" alt="Picture of a Hamster">
+
+                </div>
             </div>
 
-            <div>
-
-                <img src="img/puppy.jpg" alt="Picture of a puppy">
-                <img src="img/rick-t-t-uhScTLh4vSg-unsplash.jpg" alt="Picture of a cute cat">
-                <img src="img/hamster.jpg" alt="Picture of a Hamster">
-
-            </div>
 
         </div>
 
