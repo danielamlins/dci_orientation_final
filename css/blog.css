@@ -35,7 +35,6 @@
   text-decoration: none;
 }
 
-
 /* Main Content */
 .blog .main-content {
   width: 80%;
@@ -99,7 +98,7 @@ img.img-portrait {
   box-shadow: 0 3px 7px #5b3942;
 }
 
- .blog-txt table tr th {
+.blog-txt table tr th {
   padding: 15px 20px 15px 10px;
   background-color: RGB(180, 134, 159, 0.8);
   text-align: left;
@@ -122,18 +121,17 @@ a.source-link {
   padding: 0;
 }
 
-
 /* Back to top link */
 .back-top {
   margin: 0 1.5rem;
 }
 
-
-
-
-
 /* Media queries */
 @media only screen and (max-width: 800px) {
+  .blog .main-content {
+    width: 100%;
+    margin: 0;
+  }
   .blog .side-menu {
     position: static;
     margin-top: 5rem;
@@ -141,13 +139,14 @@ a.source-link {
     width: 100%;
   }
   .blog .side-menu ul {
-    width: 90%;
+    margin-right: 0;
+    width: 70%;
   }
 
-  .blog .main-content {
-    width: 100%;
-    margin-top: 0;
+  .blog .main-content .blog-txt{
+    margin: 0 auto;
   }
+
   .blog-txt table {
     width: 95%;
   }
