@@ -131,6 +131,7 @@ a.source-link {
   .blog .main-content {
     width: 100%;
     margin: 0;
+    margin-left: 2rem;
   }
   .blog .side-menu {
     position: static;
