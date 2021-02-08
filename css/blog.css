@@ -134,13 +134,13 @@ a.source-link {
 
 /* Media queries */
 @media only screen and (max-width: 800px) {
-  .side-menu {
+  .blog .side-menu {
     position: static;
     margin-top: 5rem;
     margin-left: 2rem;
     width: 100%;
   }
-  .side-menu ul {
+  .blog .side-menu ul {
     width: 90%;
   }
 
