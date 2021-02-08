@@ -1,6 +1,7 @@
 /* Styles for the blog page */
 
 /* Side-menu */
+
 .blog .side-menu {
   width: 25%;
   position: fixed;
@@ -47,10 +48,8 @@
 }
 
 .blog-txt {
-  margin-right: 30px;
   margin-left: 20px;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding: 80px 40px;
 }
 
 .blog-txt h5 {
@@ -72,9 +71,8 @@
 
 /* Main Content Images */
 .blog-txt img {
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
-  height: 200px;
+  margin: 2.5rem;
+  height: 10rem;
   float: left;
   border-radius: 10px;
 }
@@ -91,9 +89,12 @@ img.img-portrait {
 }
 
 /* Main-Content tables */
+div.table {
+  padding: 25px;
+}
 .blog-txt table {
   margin: inherit;
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
   box-shadow: 0 3px 7px #5b3942;
 }
@@ -128,23 +129,28 @@ a.source-link {
 
 /* Media queries */
 @media only screen and (max-width: 800px) {
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
   .blog .main-content {
     width: 100%;
     margin: 0;
-    margin-left: 2rem;
   }
   .blog .side-menu {
     position: static;
     margin-top: 5rem;
     margin-left: 2rem;
-    width: 100%;
+    width: 80%;
   }
   .blog .side-menu ul {
     margin-right: 0;
     width: 70%;
   }
 
-  .blog .main-content .blog-txt{
+  .blog .main-content .blog-txt {
     margin: 0 auto;
   }
 
@@ -157,5 +163,45 @@ a.source-link {
   .blog-txt table tr td {
     padding: 6px 8px;
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   .blog .side-menu ul {
+    width: 100%;
+  }
+
+  
+  .blog .main-content {
+    /* width: 80% */
+  }
+
+
+  .blog .main-content .blog-txt {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 20px;
+  }
+
+  .blog .main-content .blog-txt img {
+    width: 60%;
+    height: auto;
+  }
+
+  .blog .main-content .blog-txt img.img-right {
+    float: none;
+  }
+
+  .blog .main-content .blog-txt div.table {
+    width: 90vw;
+  }
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
