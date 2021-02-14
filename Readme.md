@@ -12,7 +12,7 @@ For the purpose of this template, either open index.html with any recent browser
 
 ## Technologies
 
-For this Project, I used html and CSS.
+For this Project, I used HTML and CSS.
 
 ## Source Structure
 
